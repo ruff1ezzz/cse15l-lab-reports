@@ -7,4 +7,4 @@ I am from *Sixth College* and I am a **Math CS** *Major*.
 
 > Below is an image... Enjoy!
 
-![Image]
+![Image](http://url/a.png)
