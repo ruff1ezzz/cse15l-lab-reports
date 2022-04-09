@@ -23,4 +23,6 @@ Finally, I learned how to create a ssh keygen to log into my ieng6 server accoun
 ![Image](https://raw.githubusercontent.com/ruff1ezzz/cse15l-lab-reports/main/SS%20from%20Lab%201%20Setting%20up%20keygen.png)
 
 ***
-Lab 2:
+**Lab 2:**
+
+In Lab 2 I worked on creating 
