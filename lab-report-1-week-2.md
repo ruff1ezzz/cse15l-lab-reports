@@ -1,7 +1,9 @@
 ## Aung Myat, April 8th, 2022
 ## Lab Report 1
 [Link to my first index.md file](https://ruff1ezzz.github.io/cse15l-lab-reports/index.html)
+
 ***
+
 **Lab 1:**
 
 In **Lab 1**, first I met my lab group and introduced each other. Then I was prompted to download VS Code, which I already did. And then we worked on remotely connecting to our ieng6 accounts server in which I got the result of:
