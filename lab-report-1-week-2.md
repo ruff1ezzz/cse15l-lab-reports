@@ -25,6 +25,7 @@ Finally, I learned how to create a ssh keygen to log into my ieng6 server accoun
 ![Image](https://raw.githubusercontent.com/ruff1ezzz/cse15l-lab-reports/main/SS%20from%20Lab%201%20Setting%20up%20keygen.png)
 
 ***
+
 **Lab 2:**
 
-In Lab 2 I worked on creating 
+In **Lab 2**, I worked on creating a new GitHub account. First, I created a new account, then I created a new repository in my account to start a new project. Then I was able to write something on the file. Then I went to settings --> page and link it to the main branch, which then gave me the access to the link of my md file website. 
