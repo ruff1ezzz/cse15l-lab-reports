@@ -25,3 +25,4 @@ Here is the ranking of the top fast food chain in my opinion:
 
 ![Image](https://m.media-amazon.com/images/I/61zLPovRaIL._AC_SX522_.jpg)
 
+[Back to Index page](https://ruff1ezzz.github.io/cse15l-lab-reports/index.html)
