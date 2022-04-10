@@ -50,4 +50,19 @@ Then I saved the file and typed `scp WhereAmI.java cs15lsp22ajc@ieng6.ucsd.edu:~
 
 **Lab 2:**
 
-In **Lab 2**, I worked on creating a new GitHub account. First, I created a new account, then I created a new repository in my account to start a new project. Then I was able to write something on the file. Then I went to settings --> page and link it to the main branch, which then gave me the access to the link of my md file website. 
+1) In **Lab 2**, I worked on creating a new GitHub account. First, I created a new account, then I created a new repository in my account to start a new project and named it `index.md`. Then I edited the file by writing some sentences. Then I went to settings --> page and set the branch setting to main, which then gave me the access to the website link of my `index.md` file website. 
+
+[Click me to access my index.md website](https://ruff1ezzz.github.io/cse15l-lab-reports/index.html)
+
+2) Secondly, I learned the basic syntax of the MarkDown language and made a new file, named "`MarkDownPractice.md`". Some of the basic syntaxes were:
+
+```
+- *Italic*
+- **Bold**
+- # Heading 1
+- ## Heading 2
+- [Link](http://a.com)
+- ![Image](http://url/a.png)
+```
+
+[Click me to access MarkDownPractice.md website](https://ruff1ezzz.github.io/cse15l-lab-reports/MarkDownPractice.html)
