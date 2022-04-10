@@ -67,9 +67,9 @@ Then I saved the file and typed `scp WhereAmI.java cs15lsp22ajc@ieng6.ucsd.edu:~
 
 Here is the picture of some of the edits I used in my `MarkDownPractice.md` file:
 
-![Cheatsheet]()
+![Cheatsheet](MarkdownCheatSheet.png)
 
-[Click me to access my MarkDownPractice.md website](https://ruff1ezzz.github.io/cse15l-lab-reports/MarkDownPractice.html) : for more edits using MarkDown syntax cheatsheet.
+[Click me to access my MarkDownPractice.md website](https://ruff1ezzz.github.io/cse15l-lab-reports/MarkDownPractice.html) : for more edits using MarkDown.
 
 3) Futhermore, I learned how to access the websites of different files from the same repository. All you need to do is add `/<filename>.html` at the end of your repository website.
 
