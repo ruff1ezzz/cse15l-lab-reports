@@ -6,23 +6,36 @@
 
 **Lab 1:**
 
-In **Lab 1**, first I met my lab group and introduced each other. Then I was prompted to download VS Code, which I already did. And then we worked on remotely connecting to our ieng6 accounts server in which I got the result of:
+In **Lab 1**, first I met my lab group and introduced each other. Then I was prompted to download VS Code, which I already did. And then we worked on remotely connecting to  our ieng6 accounts server by inputing `$ ssh cs15lsp22ajc@ieng6.ucsd.edu` into the terminal and got the result of:
 
-![Image](https://raw.githubusercontent.com/ruff1ezzz/cse15l-lab-reports/main/Screen%20Shot%202022-04-08%20at%205.17.13%20PM.png)
+![Image](1Lab1.png)
 
-I couldn't find a screenshot of before adding the keygen but if I were to run the ssh cs15lsp22ajc@ieng6.ucsd.edu without the keygen, the terminal would ask me for my server account password and run similarly to the screenshot provided.
+```
 
-Afterwards, I worked on running commands, such as ls, cd, ls -t, ls -la, dir, pwd in the ieng6 server:
+```
 
-![Image](https://raw.githubusercontent.com/ruff1ezzz/cse15l-lab-reports/main/SS%20from%20Lab%201%20running%20commands.png)
+I couldn't find a screenshot prior to adding the keygen but if I were to run the `$ ssh cs15lsp22ajc@ieng6.ucsd.edu` without the keygen, the terminal would ask me for my server account password and run similarly to the screenshot provided.
+
+Afterwards, I worked on running commands, such as 
+
+* `ls`
+* `cd` 
+* `ls -t` 
+* `ls -la` 
+* `dir`
+* `pwd` 
+
+in the ieng6 server:
+
+![Image](CommandLab1.png)
 
 Then, I learned how to move files from my computer to the ieng6 server using the scp command, scp WhereAmI.java cs15lsp22ajc@ieng6.ucsd.edu:~/. In the image below it is the aftermath of transferring the WhereAmI.java file from my computer to the ieng6 server:
 
-![Image](https://raw.githubusercontent.com/ruff1ezzz/cse15l-lab-reports/main/SS%20from%20Lab%201%20Moving%20Files%20over%20SSH%20with%20scp.png)
+![Image](SCPLab1.png)
 
 Finally, I learned how to create a ssh keygen to log into my ieng6 server account faster and more efficiently without typing my long password. For this I had to input some ssh-keygen command and create a keygen for my account and below in the image you can see that after creating the keygen I didn't have to input my password anymore:
 
-![Image](https://raw.githubusercontent.com/ruff1ezzz/cse15l-lab-reports/main/SS%20from%20Lab%201%20Setting%20up%20keygen.png)
+![Image](KeyGenLab1.png)
 
 ***
 
