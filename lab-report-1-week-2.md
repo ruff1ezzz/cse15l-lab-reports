@@ -6,11 +6,11 @@
 
 **Lab 1:**
 
->1) In **Lab 1**, first I met my lab group and introduced each other. Then I was prompted to download VS Code, which I already did. And then we worked on remotely connecting to  our ieng6 accounts server by inputing `$ ssh cs15lsp22ajc@ieng6.ucsd.edu` into the terminal and after entering the password to my account, I got the result of:
+1) In **Lab 1**, first I met my lab group and introduced each other. Then I was prompted to download VS Code, which I already did. And then we worked on remotely connecting to  our ieng6 accounts server by inputing `$ ssh cs15lsp22ajc@ieng6.ucsd.edu` into the terminal and after entering the password to my account, I got the result of:
 
 ![Start](images/1Lab1.png)
 
->2) Afterwards, I worked on running commands, such as 
+2) Afterwards, I worked on running commands, such as 
 
 * `ls` - list files
 * `cd` - change directory
@@ -23,7 +23,7 @@ in the ieng6 server:
 
 ![Commands](images/CommandLab1.png)
 
->3) Then, I learned how to move files from my computer to the ieng6 server using the scp command, `scp WhereAmI.java cs15lsp22ajc@ieng6.ucsd.edu:~/`. 
+3) Then, I learned how to move files from my computer to the ieng6 server using the scp command, `scp WhereAmI.java cs15lsp22ajc@ieng6.ucsd.edu:~/`. 
 
 First, I created a file called WhereAmI.java and added the following code, which gives me the information of my system.
 
@@ -42,7 +42,7 @@ Then I saved the file and typed `scp WhereAmI.java cs15lsp22ajc@ieng6.ucsd.edu:~
 
 ![SCP](images/SCPLab1.png)
 
->4) Finally, I learned how to create a ssh keygen to log into my ieng6 server account faster and more efficiently without typing my long password. Firstly, I input `$ ssh-keygen` into my computer cliet, then I had to put in the file path of where I want to save the key in and press enter twice to leave it as no passphrase. Then after the system generated and saved the key, I log into my ieng6 account by running `$ ssh cs15lsp22ajc@ieng6.ucsd.edu` command and entering my password to input `$ mkdir .ssh` in the ieng6 computer client. Then I logged out and inputted `$ scp /Users/aungbong/.ssh/id_rsa.pub cs15lsp22ajc@ieng6.ucsd.edu:~/.ssh/authorized_keys`, which connects to the keygen and then when I log back into my ieng6 server account, I no longer need to enter my password. Below is the image of the whole process:
+4) Finally, I learned how to create a ssh keygen to log into my ieng6 server account faster and more efficiently without typing my long password. Firstly, I input `$ ssh-keygen` into my computer cliet, then I had to put in the file path of where I want to save the key in and press enter twice to leave it as no passphrase. Then after the system generated and saved the key, I log into my ieng6 account by running `$ ssh cs15lsp22ajc@ieng6.ucsd.edu` command and entering my password to input `$ mkdir .ssh` in the ieng6 computer client. Then I logged out and inputted `$ scp /Users/aungbong/.ssh/id_rsa.pub cs15lsp22ajc@ieng6.ucsd.edu:~/.ssh/authorized_keys`, which connects to the keygen and then when I log back into my ieng6 server account, I no longer need to enter my password. Below is the image of the whole process:
 
 ![Keygen](images/KeygenLab1.png)
 
@@ -50,11 +50,11 @@ Then I saved the file and typed `scp WhereAmI.java cs15lsp22ajc@ieng6.ucsd.edu:~
 
 **Lab 2:**
 
->1) In **Lab 2**, I worked on creating a new GitHub account. First, I created a new account, then I created a new repository in my account to start a new project and named it `index.md`. Then I edited the file by writing some sentences. Then I went to settings --> page and set the branch setting to main, which then gave me the access to the website link of my `index.md` file website. 
+1) In **Lab 2**, I worked on creating a new GitHub account. First, I created a new account, then I created a new repository in my account to start a new project and named it `index.md`. Then I edited the file by writing some sentences. Then I went to settings --> page and set the branch setting to main, which then gave me the access to the website link of my `index.md` file website. 
 
 [Click me to access my index.md website](https://ruff1ezzz.github.io/cse15l-lab-reports/index.html)
 
->2) Secondly, I learned the basic syntax of the MarkDown language and made a new file, named "`MarkDownPractice.md`". Some of the basic syntaxes were:
+2) Secondly, I learned the basic syntax of the MarkDown language and made a new file, named "`MarkDownPractice.md`". Some of the basic syntaxes were:
 
 ```
 - *Italic*
@@ -71,7 +71,7 @@ Here is the picture of some of the edits I used in my `MarkDownPractice.md` file
 
 [Click me to access my MarkDownPractice.md website](https://ruff1ezzz.github.io/cse15l-lab-reports/MarkDownPractice.html) : for more edits using MarkDown.
 
->3) Futhermore, I learned how to access the websites of different files from the same repository. All you need to do is add `/<filename>.html` at the end of your repository website.
+3) Futhermore, I learned how to access the websites of different files from the same repository. All you need to do is add `/<filename>.html` at the end of your repository website.
 
 For example,
 ```
@@ -81,4 +81,4 @@ https://ruff1ezzz.github.io/cse15l-lab-reports/index.html
 - To access the index.md file on the website
 ```
 
->4) Then we learned about using Github Desktop. The full process is to clone my repository in my Github account into the Github Desktop, which then grants me the access to run it all on Visual Studio Code making it easier to edit whenever I want. 
+4) Then we learned about using Github Desktop. The full process is to clone my repository in my Github account into the Github Desktop, which then grants me the access to run it all on Visual Studio Code making it easier to edit whenever I want. 
