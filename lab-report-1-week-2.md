@@ -88,3 +88,7 @@ Perks of using VS Code to edit markdown files:
 * Able to view the live preview of the edits with split tabs
 
 ![VScode](images/VScodeMD.png)
+
+**Important notes on using Github Desktop and VS Code:**
+* Editing files alone on VS Code doesn't change your actual website.
+* Everytime you commit a change after saving your edited file on VS Code, you have to push 
