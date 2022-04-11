@@ -42,7 +42,7 @@ Then I saved the file and typed `scp WhereAmI.java cs15lsp22ajc@ieng6.ucsd.edu:~
 
 ![SCP](images/SCPLab1.png)
 
-4) Finally, I learned how to create a ssh keygen to log into my ieng6 server account faster and more efficiently without typing my long password. Firstly, I input `$ ssh-keygen` into my computer cliet, then I had to put in the file path of where I want to save the key in and press enter twice to leave it as no passphrase. Then after the system generated and saved the key, I log into my ieng6 account by running `$ ssh cs15lsp22ajc@ieng6.ucsd.edu` command and entering my password to input `$ mkdir .ssh` in the ieng6 computer client. Then I logged out and inputted `$ scp /Users/aungbong/.ssh/id_rsa.pub cs15lsp22ajc@ieng6.ucsd.edu:~/.ssh/authorized_keys`, which connects to the keygen and then when I log back into my ieng6 server account, I no longer need to enter my password. Below is the image of the whole process:
+4) I also learned how to create a ssh keygen to log into my ieng6 server account faster and more efficiently without typing my long password. Firstly, I input `$ ssh-keygen` into my computer cliet, then I had to put in the file path of where I want to save the key in and press enter twice to leave it as no passphrase. Then after the system generated and saved the key, I log into my ieng6 account by running `$ ssh cs15lsp22ajc@ieng6.ucsd.edu` command and entering my password to input `$ mkdir .ssh` in the ieng6 computer client. Then I logged out and inputted `$ scp /Users/aungbong/.ssh/id_rsa.pub cs15lsp22ajc@ieng6.ucsd.edu:~/.ssh/authorized_keys`, which connects to the keygen and then when I log back into my ieng6 server account, I no longer need to enter my password. Below is the image of the whole process:
 
 ![Keygen](images/KeygenLab1.png)
 
@@ -50,7 +50,9 @@ Then I saved the file and typed `scp WhereAmI.java cs15lsp22ajc@ieng6.ucsd.edu:~
 
 **Lab 2:**
 
-1) In **Lab 2**, I worked on creating a new GitHub account. First, I created a new account, then I created a new repository in my account to start a new project and named it `index.md`. Then I edited the file by writing some sentences. Then I went to settings --> page and set the branch setting to main, which then gave me the access to the website link of my `index.md` file website. 
+1) In **Lab 2**, I worked on creating a new GitHub account. 
+* First, I created a new account, then I created a new repository in my account to start a new project and named it `index.md`. 
+* Then I edited the file by writing some sentences. Then I went to settings --> page and set the branch setting to main, which then gave me the access to the website link of my `index.md` file website. 
 
 [Click me to access my index.md website](https://ruff1ezzz.github.io/cse15l-lab-reports/index.html)
 
