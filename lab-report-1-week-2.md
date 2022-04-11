@@ -83,12 +83,13 @@ https://ruff1ezzz.github.io/cse15l-lab-reports/index.html
 
 4) Then we learned about using Github Desktop. The full process is to clone my repository in my Github account into the Github Desktop, which then grants me the access to run it all on Visual Studio Code making it easier to edit whenever I want, even offline.
 
-Perks of using VS Code to edit markdown files:
+>Perks of using VS Code to edit markdown files:
 * Able to edit offline
 * Able to view the live preview of the edits with split tabs
 
 ![VScode](images/VScodeMD.png)
 
-**Important notes on using Github Desktop and VS Code:**
-* Editing files alone on VS Code doesn't change your actual website.
-* Everytime you commit a change after saving your edited file on VS Code, you have to push 
+>**Important notes on using Github Desktop and VS Code:**
+* Editing files alone on VS Code doesn't change my actual website.
+* Everytime I commit a change after saving my edited file on VS Code, I have to push orgin to make changes in my actual repository.
+* This is required for any changes done on my clone repository in Github Desktop.
