@@ -1,6 +1,6 @@
 # Aung Myat, April 8th, 2022
 # Lab Report 1
-[Link to back to my index.md file](https://ruff1ezzz.github.io/cse15l-lab-reports/index.html)
+[Home Page](https://ruff1ezzz.github.io/cse15l-lab-reports/index.html)
 
 ***
 
