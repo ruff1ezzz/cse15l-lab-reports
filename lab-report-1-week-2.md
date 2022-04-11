@@ -81,4 +81,10 @@ https://ruff1ezzz.github.io/cse15l-lab-reports/index.html
 - To access the index.md file on the website
 ```
 
-4) Then we learned about using Github Desktop. The full process is to clone my repository in my Github account into the Github Desktop, which then grants me the access to run it all on Visual Studio Code making it easier to edit whenever I want. 
+4) Then we learned about using Github Desktop. The full process is to clone my repository in my Github account into the Github Desktop, which then grants me the access to run it all on Visual Studio Code making it easier to edit whenever I want, even offline.
+
+Perks of using VS Code to edit markdown files:
+* Able to edit offline
+* Able to view the live preview of the edits with split tabs
+
+
