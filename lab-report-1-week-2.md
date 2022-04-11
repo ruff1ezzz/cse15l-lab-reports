@@ -25,7 +25,7 @@ in the ieng6 server:
 
 3) Then, I learned how to move files from my computer to the ieng6 server using the scp command, `scp WhereAmI.java cs15lsp22ajc@ieng6.ucsd.edu:~/`. 
 
-First, I created a file called WhereAmI.java and added the following code, which gives me the information of my system.
+* First, I created a file called WhereAmI.java and added the following code, which gives me the information of my system.
 
 ```
 class WhereAmI {
@@ -38,7 +38,9 @@ class WhereAmI {
 }
 ```
 
-Then I saved the file and typed `scp WhereAmI.java cs15lsp22ajc@ieng6.ucsd.edu:~/` command to copy and move that file into my ieng6 account server. So once the transfer was complete, I checked to see whether the file was in my directory by inputting `$ ls` in the ieng6 computer. Once the file was there, I inputted `$ javac WhereAmI.java` and `$ java WhereAmI` in the ieng6 computer, which gives me the following result:
+* Then I saved the file and typed `scp WhereAmI.java cs15lsp22ajc@ieng6.ucsd.edu:~/` command to copy and move that file into my ieng6 account server. 
+* So once the transfer was complete, I checked to see whether the file was in my directory by inputting `$ ls` in the ieng6 computer. 
+* Once the file was there, I inputted `$ javac WhereAmI.java` and `$ java WhereAmI` in the ieng6 computer, which gives me the following result:
 
 ![SCP](images/SCPLab1.png)
 
