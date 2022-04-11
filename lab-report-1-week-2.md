@@ -43,7 +43,6 @@ class WhereAmI {
   }
 }
 ```
-<br>
 
 * Then I saved the file and typed `scp WhereAmI.java cs15lsp22ajc@ieng6.ucsd.edu:~/` command to copy and move that file into my ieng6 account server. 
 * So once the transfer was complete, I checked to see whether the file was in my directory by inputting `$ ls` in the ieng6 computer. 
