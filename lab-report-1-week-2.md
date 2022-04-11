@@ -87,4 +87,4 @@ Perks of using VS Code to edit markdown files:
 * Able to edit offline
 * Able to view the live preview of the edits with split tabs
 
-
+![VScode](images/VScodeMD.png)
