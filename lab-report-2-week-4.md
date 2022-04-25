@@ -36,3 +36,20 @@ After forking/cloing the repository, I made sure I can run it by using the comma
 
 * `javac MarkdownParse.java`
 * `java MarkdownParse test-file.md`
+
+Then we added print statements in the code to check and answer the following questions:
+
+1) How many different values does `currentIndex` have when the program is run on the given example? What are they?
+
+ANS - `currentIndex` has 3 different values when the code runs. They are 0, 39, 64.
+
+2) What is the purpose of the second argument to `indexOf`? What would be different if it wasn't provided?
+
+ANS - The purpose of the second `indexOf`, is to start the search for the starting argument form the position of the second argument. If there isn't a second argument there, an infinite loop would occur when you run the program due to a missing bound.
+
+## 3) Finding a breaking test
+
+Afterwards, my parter and I tried to come up with different tests until we get something that has incorrect behaviors (an error, an infinite loop, prints the wrong URLs, etc).
+
+We then commited a new file and write out our test case.
+
