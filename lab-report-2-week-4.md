@@ -27,8 +27,8 @@ Afterwards, I answered questions on about the video, such as:
 
 Furthermore, I was prompted to fork, which is a complete copy of the repository that sits in your account, a given repository, which contained two files:
 
-* MarkdownParse.java
-* test-file.md
+* `MarkdownParse.java`
+* `test-file.md`
 
 Repository to fork - [link](https://github.com/nidhidhamnani/markdown-parser)
 
@@ -41,11 +41,11 @@ Then we added print statements in the code to check and answer the following que
 
 1) How many different values does `currentIndex` have when the program is run on the given example? What are they?
 
-ANS - `currentIndex` has 3 different values when the code runs. They are 0, 39, 64.
+**ANS** - `currentIndex` has 3 different values when the code runs. They are 0, 39, 64.
 
 2) What is the purpose of the second argument to `indexOf`? What would be different if it wasn't provided?
 
-ANS - The purpose of the second `indexOf`, is to start the search for the starting argument form the position of the second argument. If there isn't a second argument there, an infinite loop would occur when you run the program due to a missing bound.
+**ANS** - The purpose of the second `indexOf`, is to start the search for the starting argument form the position of the second argument. If there isn't a second argument there, an infinite loop would occur when you run the program due to a missing bound.
 
 ## 3) Finding a breaking test
 
@@ -53,3 +53,30 @@ Afterwards, my parter and I tried to come up with different tests until we get s
 
 We then commited a new file and write out our test case.
 
+Shortly after, we had to answer another question - Why bother making a commit at this point? What benefit might that have in the future? How might it help a staff member who is answering your question on Piazza?
+
+**ANS** - By making a commit, it allows us to see the history of our commit in our main repository and helps the staff member on Piazza to easily spot it in our github accounts by tracking what we did wrong step by step.
+
+## 4) Improving the program
+
+Then we started to perform incremental coding. Incremental coding means to start from a few lines, to minimize errors and to avoid debugging long lines of codes. With this practice my partner and I tried to develop a better program to parse markdown files.
+
+![incremental](images/markdownediting.png)
+
+We tried to come up with a better solution to eliminate edge cases such as having an extra paranthesis in side the website like the following:
+
+`[https://www.goo(g)le.com]`
+
+Although we couldn't completely find the solution, we learned the practices of incremental development and later we commited our effort into the main github to get a feedback from tutors.
+
+## 5) Repeating the process
+
+Finally, we repeated the same process of first finding a failed test and then performing incremental development to fully improve the program.
+
+**Lab 2:**
+
+I couldn't make it to this lab due to health reasons so I worked on it myself.
+
+## 1) Your memory
+
+Firstly, I re-tested the `MarkdownParse.java` file with the given `test-file.md` by entering the code `java MarkdownParse.java test-file.md` into the terminal.
