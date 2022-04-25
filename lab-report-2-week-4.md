@@ -79,4 +79,4 @@ I couldn't make it to this lab due to health reasons so I worked on it myself.
 
 ## 1) Your memory
 
-Firstly, I re-tested the `MarkdownParse.java` file with the given `test-file.md` by entering the code `java MarkdownParse.java test-file.md` into the terminal.
+Firstly, I re-tested the `MarkdownParse.java` file with the given `test-file.md` by entering the code `java MarkdownParse.java test-file.md` into the terminal. 
