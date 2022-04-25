@@ -75,8 +75,78 @@ Finally, we repeated the same process of first finding a failed test and then pe
 
 **Lab 2:**
 
-I couldn't make it to this lab due to health reasons so I worked on it myself.
+*I couldn't make it to this lab due to health reasons so I worked on it myself.*
 
 ## 1) Your memory
 
-Firstly, I re-tested the `MarkdownParse.java` file with the given `test-file.md` by entering the code `java MarkdownParse.java test-file.md` into the terminal. 
+Firstly, I re-tested the `MarkdownParse.java` file with the three other test files that me and my partner created in Lab 3 by entering the code `java MarkdownParse.java *file-name*` into the terminal. One of the test file that I wrote doesn't work because it has some closed or open brackets in the website for example:
+
+> `# Title`
+> <br>
+> <br>
+>`[link1](https://something.()com)`
+<br>
+`[link2](https://google.(com))`
+
+## 2) Running via Command Line
+
+In this step, I was prompted to time how long the compiling process takes when we type `java MarkdownParse *test-files*` into the command line after adding a print statement in the main method of `MarkdownParse.java` file. I did this for 4 test files including the original test file, and in total the time it took was approximately 28 seconds.
+
+## 3) Setting up JUnit
+
+Afterwards, I learned how to set up JUnit.
+
+1) First off, I downloaded two `.jar` files:
+* `junit-4.13.2.jar
+* hamcrest-core-1.3.jar
+
+2) Then, I made a directory called `lib` in my project, and copied both of those files to that directory. Consequently, I commited an push the files once they are added to `lib` so I can see it in my main repository.
+
+3) I then, created a file called `MarkdownParseTest.java` file in my repository and put the following code in the file:
+
+
+>import static org.junit.Assert.*;
+<br>
+import org.junit.*;
+<br>
+public class MarkdownParseTest {
+<br>
+....@Test
+<br>
+....public void addition() {
+<br>
+........assertEquals(2, 1 + 1);
+<br>
+....}
+<br>
+}
+
+Then, I ran the following code in the terminal:
+
+* `$ javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java`
+* `$ java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest`
+
+These two lines of code:
+1) Imports Assert form JUnit
+2) Import all of JUnit
+3) Runs the markdownparser file
+
+Finally, I commited to my github repository.
+
+## 4) Writing tests with JUnit
+
+
+
+## 5) Benefits of automated test
+
+## 6) More tests, and Symptoms vs Bugs
+
+
+
+
+
+
+
+
+
+
