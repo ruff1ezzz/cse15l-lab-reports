@@ -73,6 +73,8 @@ Although we couldn't completely find the solution, we learned the practices of i
 
 Finally, we repeated the same process of first finding a failed test and then performing incremental development to fully improve the program.
 
+***
+
 **Lab 2:**
 
 *I couldn't make it to this lab due to health reasons so I worked on it myself.*
@@ -126,20 +128,45 @@ Then, I ran the following code in the terminal:
 * `$ javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java`
 * `$ java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest`
 
-These two lines of code:
+These two lines of code...
 1) Imports Assert form JUnit
 2) Import all of JUnit
 3) Runs the markdownparser file
 
 Finally, I commited to my github repository.
 
+Below is the image after setting up the JUnit test and testing a simple math equation:
+
+![WritingTest1](images/junitsetup.png)
+
 ## 4) Writing tests with JUnit
 
+We then had to write JUnit tests for the `getLinks()` method in my `MarkdownParse.java` file.
 
+In the `MarkdownParseTest.java` file I first wrote a JUnit test with the original `test-file.md` file, and compile using the two commands:
+
+* `$ javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java`
+* `$ java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest`
+
+...which gave me the result of:
+
+![WritingTest1](images/WritingTests.png)
+
+Since there were no error I went ahead and commited and push this into my github `markdown-parser` repository.
+
+Then I wrote more tests using the other test files that I wrote and after getting positive tests I commited and pushed the changes into my gihub `markdown-parser` repository again.
+
+![WritingMoreTest](images/WritingMoreTests.png)
 
 ## 5) Benefits of automated test
 
+In this step, I was asked to compare the efficiency between testing using JUnit vs testing each file individually. I didn't particularly timed myself performing the JUnit test when I use the automated way of the test, but I can still clearly see that the automated method of using JUnit test is so much faster since there isn't any typing involved.
+
 ## 6) More tests, and Symptoms vs Bugs
+
+Ultimately, I was prompted to write even more tests for the `getLink()` method with test files from the orignial `markdown-parse` repository.
+
+Below is the picture of the results I got after testing the test files:
 
 
 
