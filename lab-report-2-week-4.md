@@ -182,7 +182,7 @@ After fixing the bugs that make the *failure-inducing* inputs.
 
 ![Failure Inducing fix](images/failurefix.png)
 
-In conclusion, among the 8 `test-files` that were given for us to test, the two tests that had *failure-inducing* inputs didn't have a similar bug. I couldn't figure out the bug for `test-file 2` but for `test-file 8`, there was an extra symbol that was restricting the link to be added. The `bug` was that it detects the extra symbol and giving out a `symptom`, which gives out the wrong answer than expected. Therefore, I fixed the JUnit test code in the `MarkdownParseTest.java` file, by adding the split method within a for loop, which ignores repeated characters. After doing this I fixed the *failure-inducing* input for both `test-files` and got the result that I want.
+In conclusion, among the 8 `test-files` that were given for us to test, the two tests that had *failure-inducing* inputs didn't have a similar bug. I couldn't figure out the bug for `test-file 2` but for `test-file 8`, there was an extra symbol that was restricting the link to be added. The `bug` was that, it detects the extra symbol and gives out a `symptom`, which is the wrong answer than expected. Therefore, I fixed the JUnit test code in the `MarkdownParseTest.java` file, by adding the split method within a for loop, which ignores repeated characters. After doing this I fixed the *failure-inducing* input for both `test-files` and got the result that I want.
 
 
 
