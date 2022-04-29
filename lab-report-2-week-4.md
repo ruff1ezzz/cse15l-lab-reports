@@ -164,19 +164,21 @@ In this step, I was asked to compare the efficiency between testing using JUnit 
 
 ## 6) More tests, and Symptoms vs Bugs
 
-Ultimately, I was prompted to write even more tests for the `getLink()` method with test files from the orignial `markdown-parse` repository.
+Ultimately, I was prompted to write even more tests for the `getLink()` method using test files from the orignial `markdown-parse` repository and find failure inducing inputs from those test files.
 
 Below is the picture of the results I got after testing the test files:
 
-![OriginalTests](images/LastPart.png)
+![OriginalTests](images/failureInducingcorrect.png)
 
-Towards the end we had to answer some questions on these test files:
+Out of the eight test-files:
 
-1) Which test files are *failure-inducing* inputs for your version of `MarkdownParse`?
+* In my version of MarkdownParse, `test-file 2` and `test-file 8` had *failure-inducing* inputs.
 
-Ans - Test 
+* No pair of `test-files` has the same failure-inducing inputs so I have 2 bugs in my implementation based on the `test-files`.
 
-Based on the test results,
+* The bug in `test-file 2` is unknown to me but the bug in `test-file 8` is due to having an extra `"["` symbol at the end.
+
+After fixing the bugs that make the *failure-inducing* inputs.
 
 
 
