@@ -168,6 +168,15 @@ Ultimately, I was prompted to write even more tests for the `getLink()` method w
 
 Below is the picture of the results I got after testing the test files:
 
+![OriginalTests](images/LastPart.png)
+
+Towards the end we had to answer some questions on these test files:
+
+1) Which test files are *failure-inducing* inputs for your version of `MarkdownParse`?
+
+Ans - Test 
+
+Based on the test results,
 
 
 
