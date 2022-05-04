@@ -8,3 +8,4 @@
 
 ## 1) Synchronize Your Group Work
 
+Before we start the lab, we updated 
