@@ -6,4 +6,5 @@
 
 **Lab 5:**
 
-## 0) Pair Programming
+## 1) Synchronize Your Group Work
+
