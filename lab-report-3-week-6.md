@@ -8,4 +8,16 @@
 
 ## 1) Synchronize Your Group Work
 
-Before we start the lab, we updated 
+Before we start the lab, we updated our repositories with the latest and most efficient `markdownparse` method.
+
+## 2) Setup Github Actions on a Repository
+
+Then we 
+
+## 3) Improve markdown-parse
+
+## 4) Streamline ssh Configuration
+
+## 5) Set up Github Access from ieng6
+
+## 6) Copy Whole Directories with scp -r
