@@ -70,4 +70,32 @@ After all the above step, I cleared my terminal and tried logging into my ieng6 
 
 ## 5) Set up Github Access from ieng6
 
+![gitstatus](imagesLabReport3/gitstatus.png)
+After setting up Github Access from ieng6, this is the result I got because I didn't commit, push or pull anything from or to my ieng6 account.
+
 ## 6) Copy Whole Directories with scp -r
+
+In the end of this lab, I learned how to copy whole directories into the ieng remote server.
+
+![scpr](imagesLabReport3/scp1.png)
+
+In the picture above, first I checked if the directory that I want to copy has everything in it.
+
+Then all I had to type was `$ scp -r . ieng6:markdown-parse` and got the whole directory copied into my ieng6 server account.
+
+![scprresult](imagesLabReport3/scpResult.png)
+
+***
+
+**Lab 6:**
+
+## 1) Setup
+
+## 2) Makefile
+
+## 3) Bash Scripting
+
+## 4) Improvement
+
+## 5) Learning how Autograder works
+
