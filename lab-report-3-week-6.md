@@ -11,8 +11,13 @@
 Before we start the lab, we updated our repositories with the latest and most efficient `markdownparse` method.
 
 ## 2) Setup Github Actions on a Repository
+Then we set up Github Actions on my `MarkdownParse` repository. 
 
-Then we 
+Github action - One of the greatest tools available for continuous integration.
+
+- Other common tools: Jenkins, TeamCity, Bamboo, Buddy, Travis Cl.
+
+First, 
 
 ## 3) Improve markdown-parse
 
