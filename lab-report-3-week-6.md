@@ -11,13 +11,15 @@
 Before we start the lab, we updated our repositories with the latest and most efficient `markdownparse` method.
 
 ## 2) Setup Github Actions on a Repository
-Then we set up Github Actions on my `MarkdownParse` repository. 
+Then we set up **Github Actions** on my `MarkdownParse` repository. 
 
-Github action - One of the greatest tools available for continuous integration.
+>**Github action** - One of the greatest tools available for >continuous integration.
+>
+>- Other common tools: Jenkins, TeamCity, Bamboo, Buddy, Travis Cl.
 
-- Other common tools: Jenkins, TeamCity, Bamboo, Buddy, Travis Cl.
+First, I clicked on `Actions` on my github repository. Then, I select `set up a workflow yourself`. Then, I named the file: `main.yml`.
 
-First, 
+In the yml file, 
 
 ## 3) Improve markdown-parse
 
