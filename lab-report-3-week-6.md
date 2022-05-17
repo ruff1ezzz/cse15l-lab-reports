@@ -106,7 +106,7 @@ After setting up Github Access from ieng6, this is the result I got because I di
 
 ## 6) Copy Whole Directories with scp -r
 
-In the end of this lab, I learned how to copy whole directories into the ieng6 remote server.
+Before, we only learned how to copy single file using `scp` command by typing: `$ scp *text-file* cs15lsp22ajc@ieng6.ucsd.edu`. But in the end of this lab, I learned how to copy whole directories into the ieng6 remote server.
 
 ![scpr](imagesLabReport3/scp1.png)
 
@@ -117,6 +117,10 @@ Then all I had to type was `$ scp -r . cs15lsp22@ieng6.ucsd.edu:~/markdown-parse
 ![scprresult](imagesLabReport3/scpResult.png)
 
 The `-r` option tells `scp` to work recursively. The `.` is the source, and is the current directory. The `~/markdown-parse` tells `scp` to create the `markdown-parse` directory on the remote server (if it doesn’t exist), and then copy the contents of this directory recursively there.
+
+After copying the whole repository, I tried running tests from the `MarkdownParserTest.java` file and it works.
+
+![runninginssh](imagesLabReport3/runninginssh.png)
 
 ***
 
