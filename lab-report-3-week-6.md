@@ -86,7 +86,9 @@ Common Git commands that works within the ieng6 server:
 
 In order to access these commands in the ieng6 account, we have to set up the remote access lab to Github by adding the ssh key to your github account.
 
-* First, I entered the following code: `$ clip < ~/.ssh/id_ed25519.pub`, which copies the contents of the id_ed25519.pub file to my clipboard. This is the ssh key.
+Here is a screen shot of the steps I took to add the ssh key into my github account:
+
+![ieng6setup](imagesLabReport3/ieng6setup.png)
 
 * Then, I go to my *Github account* -> *setting* -> *SSH and GPG Keys* -> *New SSH key* and then pasted the key into the field.
 
@@ -100,7 +102,7 @@ After setting up Github Access from ieng6, this is the result I got because I di
 
 ## 6) Copy Whole Directories with scp -r
 
-In the end of this lab, I learned how to copy whole directories into the ieng remote server.
+In the end of this lab, I learned how to copy whole directories into the ieng6 remote server.
 
 ![scpr](imagesLabReport3/scp1.png)
 
