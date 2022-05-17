@@ -90,8 +90,13 @@ In order to access these commands in the ieng6 account, we have to set up the re
 
 * Then, I go to my *Github account* -> *setting* -> *SSH and GPG Keys* -> *New SSH key* and then pasted the key into the field.
 
-![gitstatus](imagesLabReport3/gitstatus.png)
+* After doing this, I have the following ssh key files in my `.ssh` directory:
+
+![pripubkey](imagesLabReport3/sshpripub.png)
+
 After setting up Github Access from ieng6, this is the result I got because I didn't commit, push or pull anything from or to my ieng6 account.
+
+![gitstatus](imagesLabReport3/gitstatus.png)
 
 ## 6) Copy Whole Directories with scp -r
 
