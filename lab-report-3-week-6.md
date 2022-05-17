@@ -98,11 +98,19 @@ After doing this, I have the following ssh key files in my `.ssh` directory:
 
 ![pripubkey](imagesLabReport3/sshpripub2.png)
 
-After these steps, I go into my *Github settings* -> *SSH and GPG keys* -> *New SSH key* and copied my new ssh key that I just created into the empty field.
+After these steps, I go into my *Github settings* -> *SSH and GPG keys* -> *New SSH key* and copied my new ssh key that I just created into the empty field. I then repeated the same process inside the ieng6 server, and got the ssh key from the keygen within ieng6 server and added it to the ssh key section in `Github.com`.
 
-After setting up Github Access from ieng6, this is the result I got because I didn't commit, push or pull anything from or to my ieng6 account.
+After setting up Github Access from ieng6, this is the result I got after adding a new `.txt` file in my cloned repository in my ieng6 account. Below is the demostration of me performing the git commands: 
 
-![gitstatus](imagesLabReport3/gitstatus.png)
+* First cloning repository but instead of using the `http` url of the repository, used the git ssh url to clone
+* Then initializing it
+* Then making a change by adding a test file
+* Then using the `git add` command, then commiting
+* Then finally pushing it to the main local repository
+
+![gitstatus](imagesLabReport3/gitaccess.png)
+
+[Link to the successful commit](https://github.com/ruff1ezzz/markdown-parser/commit/c5ac88d7903ce60ff781fa743a39b544715dcd06)
 
 ## 6) Copy Whole Directories with scp -r
 
