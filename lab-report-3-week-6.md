@@ -86,15 +86,19 @@ Common Git commands that works within the ieng6 server:
 
 In order to access these commands in the ieng6 account, we have to set up the remote access lab to Github by adding the ssh key to your github account.
 
-Here is a screen shot of the steps I took to add the ssh key into my github account:
+* First, I had to create a new ssh key using my github email.
+* Then, I saved the key into my `.ssh` folder.
+* Then, I added my ssh key to the ssh-agent, using the command `ssh-add ~/.ssh/id_ed25519`
+
+Here is a screen shot of the steps I took to create a new ssh key and adding it into ssh-agent:
 
 ![ieng6setup](imagesLabReport3/ieng6setup.png)
 
-* Then, I go to my *Github account* -> *setting* -> *SSH and GPG Keys* -> *New SSH key* and then pasted the key into the field.
+After doing this, I have the following ssh key files in my `.ssh` directory:
 
-* After doing this, I have the following ssh key files in my `.ssh` directory:
+![pripubkey](imagesLabReport3/sshpripub2.png)
 
-![pripubkey](imagesLabReport3/sshpripub.png)
+After these steps, I go into my *Github settings* -> *SSH and GPG keys* -> *New SSH key* and copied my new ssh key that I just created into the empty field.
 
 After setting up Github Access from ieng6, this is the result I got because I didn't commit, push or pull anything from or to my ieng6 account.
 
@@ -108,9 +112,11 @@ In the end of this lab, I learned how to copy whole directories into the ieng6 r
 
 In the picture above, first I checked if the directory that I want to copy has everything in it.
 
-Then all I had to type was `$ scp -r . ieng6:markdown-parse` and got the whole directory copied into my ieng6 server account.
+Then all I had to type was `$ scp -r . cs15lsp22@ieng6.ucsd.edu:~/markdown-parse` or a shorter form, `$ scp -r . ieng6:markdown-parse`, and got the whole directory copied into my ieng6 server account.
 
 ![scprresult](imagesLabReport3/scpResult.png)
+
+The `-r` option tells `scp` to work recursively. The `.` is the source, and is the current directory. The `~/markdown-parse` tells `scp` to create the `markdown-parse` directory on the remote server (if it doesn’t exist), and then copy the contents of this directory recursively there.
 
 ***
 
