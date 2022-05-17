@@ -56,6 +56,9 @@ Usually, when I log into my ieng6 accoutn form my laptop, I have to type a long 
 * Once I am in my home directory, I typed `$ ls -a` to find any `.ssh` directory is one of the hidden directories.
 * Then I typed `$ cd .ssh` which leads me inside the `.ssh` directory.
 * Afterwards, I added a `config` file in the directory.
+
+![config](imagesLabReport3/config.png)
+
 * Finally I added the following code:
 
 >Host ieng6
@@ -69,6 +72,23 @@ After all the above step, I cleared my terminal and tried logging into my ieng6 
 ![streamlinessh](imagesLabReport3/StreamlineSSH.png)
 
 ## 5) Set up Github Access from ieng6
+
+When you are in your ieng6 server account, there are ways you can access github through the server.
+
+Common Git commands that works within the ieng6 server:
+* `$ git clone` - get a copy of the code (web files) from the GitHub repository
+* `$ git commit` - commit new content that were edited in the ieng6 server
+* `$ git push` - push new content that were edited in the ieng6 server
+* `$ git pull` - pull new content that were edited outside of the ieng6 server
+* `$ git init` - initialize a local git repository
+* `$ git add` - adds files to the local repository
+* `$ git status` - checks the status of the changes in the GitHub repository
+
+In order to access these commands in the ieng6 account, we have to set up the remote access lab to Github by adding the ssh key to your github account.
+
+* First, I entered the following code: `$ clip < ~/.ssh/id_ed25519.pub`, which copies the contents of the id_ed25519.pub file to my clipboard. This is the ssh key.
+
+* Then, I go to my *Github account* -> *setting* -> *SSH and GPG Keys* -> *New SSH key* and then pasted the key into the field.
 
 ![gitstatus](imagesLabReport3/gitstatus.png)
 After setting up Github Access from ieng6, this is the result I got because I didn't commit, push or pull anything from or to my ieng6 account.
