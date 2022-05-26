@@ -8,7 +8,41 @@
 
 ## 1) Initial Review
 
-1.1) Fistly, we 
+Firstly, we all got a `MarkdownParse` repository of another team. And we analyzed their `MarkdownParse`.
+
+[Link to my group's repository](https://github.com/colecarter96/markdown-parser)
+
+[Link to the other group's repository we reviewed](https://github.com/philliptwu/markdown-parser)
+
+1.1) Clean Coding
+
+Our group analyzed the other group's code in terms of clean coding by considering the following metrics:
+
+* Meaningful names (eg. int d vs int elapsedDays)
+Avoid disinformation (eg. accountList only if it is a List)
+* Using pronounceable names (eg. getTime() instead of gethhmmss())
+* Use searchable names - (Single letter names and numeric constants are not easy to locate, should only be used for very short methods or loop counters)
+* Upper case for constants (eg. double PI)
+* Functions should have verb names(eg. deletePage() )
+* Functions should be small with a maximum indent level of 2
+* Functions should do only one thing. 
+* Functions should usually have less than 3 arguments.
+* Project should not have dead code or unreachable code (code that is never run).
+* Avoid code duplication
+* Correct formatting that makes the code readable 
+* Rational usage of comments in code 
+* Other clean coding principles discussed in class
+
+2) Then we ran different test cases using their `MarkdownParse`.
+
+We saw that there were some test cases that we had but they don't so we added them to their repository and ran them too.
+
+Then we found two different issues to report on.
+
+3) Discussion
+
+In this step, we split up in half and half of us went to the other group to give them live feedback, meanwhile the other half stayed in the group to receive feedback from the other group.
+
 
 **Lab 8:**
 
