@@ -43,7 +43,6 @@ Then we found two different issues to report on.
 
 In this step, we split up in half and half of us went to the other group to give them live feedback, meanwhile the other half stayed in the group to receive feedback from the other group.
 
-
 **Lab 8:**
 
 ## 1) Editing at the Command Line
@@ -128,3 +127,63 @@ The stack trace after the suspension
 ![locals](imgLR4/currValue.png)
 
 The local variables of `findCloseParen` after suspension.
+
+**Additional Lab Report Requirements**
+
+[Link to my group's repository](https://github.com/colecarter96/markdown-parser)
+
+[Link to the other group's repository we reviewed](https://github.com/philliptwu/markdown-parser)
+
+Firstly, in order to figure out the expected outcome for each snippet test cases, I used the [the CommonMark demo site](https://spec.commonmark.org/dingus/). 
+
+![expectedsnip1](imgLR4/expected.png)
+For snippet 1, I decided the expected url outcome would be [`url.com`,`google.com`,`ucsd.edu`] because all three of these links are written correctly while the second link contains a ticker symbol in the link section, making it an invalid link.
+
+![expectedsnip2](imgLR4/expected2.png)
+For snippet 2, I decided the expected url outcome would be [`a.com`,`example.com`] because in the preview, it shows that `a.com` is valid although it is written in the text section of another link syntax. And for `example.com` it was a valid link as shown in the preview.
+
+![expectedsnip3](imgLR4/expected3.png)
+As for snippet 3, the only expected url outcome I decided that would be included is: [`https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule`] because it is the only link that is written in the correct markdown syntax.
+
+Tests/expected output in `MarkdownParseTest.java` in my MarkdownParser:
+
+![snip1](imgLR4/snip1.png)
+
+![snip1](imgLR4/snip2.png)
+
+![snip1](imgLR4/snip3.png)
+
+
+Tests/expected output in `MarkdownParseTest.java` in the MarkdownParser that my group reviewed:
+
+![otherexpected](imgLR4/otherexpected.png)
+
+After running my test cases:
+
+![mytest](imgLR4/myruntest.png)
+
+The reason for our tests' failure is because we didn't implement our markdownparser to detect other unneccessary symbols inside the link, that makes it the link invalid so it was still parsing down the invaild links.
+
+![spcific](imgLR4/specific.png)
+
+For my group's implementation, this method above was the specific part where we can fix the error.
+
+After running their test cases:
+
+![othertest](imgLR4/otherruntest.png)
+
+It's the same case with their markdownparse. They also didn't detect symbols that makes the link invalid so it was parsing invalid links.
+
+Questions:
+
+* Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
+
+I think all I need to do is to make my markdownparse method ignore tick symbols if it's in the text secion of the markdown link syntax. And if the tick symbol is in the link section of the markdown link syntax, make that link invalid.
+
+* Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.
+
+For snippet 2, it would be a more complicated step because there is a line where there is a link inside the text section of the markdown link syntax. But for the link with brackets, we can just add the brackets as an invalid link in our `isValidLink` method.
+
+Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
+
+I think snippet 3 will also take more than 10 lines to fix becuase we have to check the number of spaces, the extra texts in the link section of the markdown link syntax and add more stuff to my `isValidLink` method.
