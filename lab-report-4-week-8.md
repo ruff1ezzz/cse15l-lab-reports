@@ -128,6 +128,8 @@ The stack trace after the suspension
 
 The local variables of `findCloseParen` after suspension.
 
+***
+
 **Additional Lab Report Requirements**
 
 [Link to my group's repository](https://github.com/colecarter96/markdown-parser)
