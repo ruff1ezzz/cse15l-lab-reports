@@ -36,7 +36,9 @@ I just scroll through manually to spot the differences in the results.
 Here is the link of the first test-file with different results:
 [Different result](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/573.md)
 
-![foo ![bar](/url)](/url2)
+> Preview to check if link is valid:
+>
+>![foo ![bar](/url)](/url2)
 
 The above "foo bar" doesn't work because it's an invalid link so the expected output should be just `[]`. Below is the output of `573.md` for both `my-markdown-parser` and the `cse15lsp22-markdown-parser`:
 
@@ -57,7 +59,9 @@ In the image above, the code in the upper part is from my `MarkdownParse.java` f
 Here is the link of the second test-file with different results:
 [Different result](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/573.md)
 
-![foo](train.jpg)
+> Preview to check if link is valid:
+>
+>![foo](train.jpg)
 
 The above error is similar to the first test-file. The text in this `577.md` file is written in the syntax for image link. Below is the output of `573.md` for both `my-markdown-parser` and the `cse15lsp22-markdown-parser`:
 
