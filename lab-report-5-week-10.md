@@ -33,5 +33,42 @@ After running the command this is what I got:
 
 I just scroll through manually to spot the differences in the results.
 
+Here is the link of the first test-file with different results:
+[Different result](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/573.md)
 
+![foo ![bar](/url)](/url2)
 
+The above "foo bar" doesn't work because it's an invalid link so the expected output should be just `[]`. Below is the output of `573.md` for both `my-markdown-parser` and the `cse15lsp22-markdown-parser`:
+
+![573](imgLR5/573.png)
+
+On the left it shows the result of `my-markdown-parser` and the right shows the result of `cse15lsp22-markdown-parser`.
+
+Based on the test results, my implementation of markdown parser is correct because the result is an empty list. The syntax `![foo ![bar](/url)](/url2)` has many errors and especially since the format of how the link is written includes an `!` at the very beginning, it is the syntax of writing an image link, therefore the url is invalid and it shouldn't be added to the list. 
+
+This wrong output error in `cse15lsp22-markdown-parser` is occuring because in the `MarkdownParse.java` file in that repository, the `MarkdownParse` method doesn't check if an exclamation mark makes a link valid or not. Therefore the result of that `MarkdownParse` method will still include the link of an image in the list.
+
+![excl](imgLR5/excl.png)
+
+In the image above, the code in the upper part is from my `MarkdownParse.java` file and the code in the terminal is from `cse15lsp22-markdown-parser` repository. All you need is to add code from line 21 to 25 from my `MarkdownParse.java` into the `cse15lsp22-markdown-parser` repository's `MarkdownParse` method.
+
+***
+
+Here is the link of the second test-file with different results:
+[](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/577.md)
+
+![foo](train.jpg)
+
+The above error is similar to the first test-file. The text in this `577.md` file is written in the syntax for image link. Below is the output of `573.md` for both `my-markdown-parser` and the `cse15lsp22-markdown-parser`:
+
+![577](imgLR5/577.png)
+
+On the left it shows the result of `my-markdown-parser` and the right shows the result of `cse15lsp22-markdown-parser`.
+
+Based on the test results, my implementation of `MarkdownParse` is correct because the result of my `MarkdownParse` is an empty list. The syntax `![577](imgLR5/577.png)` doesn't have any errors in its own form of syntax but the format of how the link is written includes an `!` at the very beginning which turns it into an image link, therefore the url is invalid and it shouldn't be added to the list. 
+
+Just like the `573.md` test file, this wrong output error in `cse15lsp22-markdown-parser` is occuring because in the `MarkdownParse.java` file in that repository, the `MarkdownParse` method doesn't check if an exclamation mark makes a link valid or not. Therefore the result of that `MarkdownParse` method will still include the link of an image in the list.
+
+![excl](imgLR5/excl.png)
+
+You can just add the code from line 21 to 25 and paste it in the code in the terminal right after the while loop, so that the `markdownparse` method can instantly break when it detects an `!` in the test-file.
